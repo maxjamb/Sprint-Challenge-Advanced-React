@@ -5,10 +5,11 @@ const Card = props => {
     const { country, id, name, searches } = props.users;
     return (
       <div className="card">
-        <h3 className="name">{name}</h3>
-        <p className="country">{country}</p>
-        <p className="searches">{searches}</p>
-        <p className="id">{id}</p>
+        <h1 className="name">{name}</h1>
+        <br />
+        <p className="country">Country: {country}</p>
+        <p className="searches">Searches: {searches}</p>
+        <p className="id">ID: {id}</p>
       </div>
     );
   } else {
